@@ -64,24 +64,31 @@
                 </nav>
             <!-- not sure if nav tag is needed -->
             <!-- revisit; make sure a/li tags have acurate names and attributes  -->
-                <span>info@email.com</span><br>123-456-7890<br>123 Queen Street West, Unit10<br>Toronto, Ontario<br>M5V2D5<br>
+                <!-- <span>info@email.com</span>  -->
+                <a href = "mailto: abc@example.com">email address</a><br>
+                <!-- <a> was an idea from fellow group mate; On one hand I'm not sure if it's neccessary being that there is a contact me form on the page; on the other hand it might make a for a good alternative  -->
+                <!-- will looks to see if i can make a tag <a> tag a link to copu email address -->
+                123-456-7890<br>123 Queen Street West, Unit10<br>Toronto, Ontario<br>M5V2D5<br>
             </address>
         <!-- not clear on how to include address/contact info -->
         </aside>
         <main>
             <section>
-                <form action="">
-                    <label for=""></label>
-                    <input type="text">
+                <form action="sendEmail.php" method="POST" class="contactMe" name="contactForm">
+                <!-- not sure how to determine server address   for action atribute -->
+                    <label for="name">name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
                     
-                    <label for=""></label>
-                    <input type="text">
+                    <label for="contactEmail">email address</label>
+                    <input type="email" id="contactEmail" name="emailAdress" placeholder="Email address" required>
                     
-                    <label for=""></label>
-                    <input type="text"
+                    <label for="message">Message</label>
+                    <textarea name="messageBody" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <!-- How should columns and rows be sppecified?; signifies height and kength-->
                     
-                    ><button></button>
+                    <button class="formButton">submit</button>
                 </form>
+                <!-- need to revisit form to make sure all necessary atributes and tags are included and accurtate -->
             </section>
         </main>
         <footer>

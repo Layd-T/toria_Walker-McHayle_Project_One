@@ -1,0 +1,57 @@
+        // Header
+.headerImage{
+    background-color: $white;
+    height: 525px;
+    width: 375px;
+    position: absolute;
+    position: relative;
+    bottom:15px;
+    right: 15px;
+}
+
+.headerImageBackground{
+    background-color: $white;
+    height: 525px;
+    width: 375px;
+    // position: absolute;
+}
+
+.headerFlex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh;
+}
+
+.harper{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    margin-left: 50px;
+    position: relative;
+    img{
+        height: calc( 172px * 0.75);
+        width: calc( 182px * 0.75);
+
+        position: absolute;
+        top: -20%;
+        right: -10%;
+    }
+}
+
+        // Main
+        // Section 1
+.sectionOne{
+    background-color: $primary4;
+    height: 50vh;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+.section1{
+    width: 50%;
+}

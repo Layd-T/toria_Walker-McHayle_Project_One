@@ -1,0 +1,72 @@
+
+            // BODY - general
+h1, h2, h3, h4,
+button,
+a{
+    color: $black;
+    font-family: $headerFont;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: $bodyFont;
+    font-size: 1rem;
+    line-height: 32px;
+    // note to self: line-height can be fixed measurement as it pertains to vertical scroll; can set max-width
+
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+            // HEADER
+header{
+        background-color: $primary3;
+        height: 90vh;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        li{
+            display: inline-block;
+            list-style-type: none;
+            text-align: center;
+
+            margin: 1vh;
+            // width: 70px;
+            padding: 0 15px;
+        }
+        a{
+            font-size: 0.70rem;
+        }
+        a:hover{
+            color: $white;
+        }
+    }
+}
+
+// not sure if this is considered nesting in too deeply or more than 3 levels deep
+
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.harperLink{
+    font-size: 1.5rem;
+    margin-top: 2vh;
+    // width: 145px;
+    padding: 0 15px;
+    text-align: center;
+}
+// header a{
+    // font-size: 100px;
+// }
+

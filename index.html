@@ -22,8 +22,16 @@
                     <li><a href="html/contact-index.html">contact</a></li>
                 </ul>
             </nav>
-            <img src="../harper-designAndAssets/assets/home-image-1.jpg" alt="Photo of Harper shoulder up laying down surrounded by balloons in photo">
-            <h1>harper</h1>
+            <div class="headerFlex">
+                <img src="../harper-designAndAssets/assets/home-image-1.jpg" alt="Photo of Harper shoulder up laying down surrounded by balloons in photo">
+
+                <div class="harper">
+                <img src="../harper-designAndAssets/assets/circle-text.png" alt="everyday life with">
+                <h1>harper</h1>
+                <!-- design wise I thought the everyday life image would make more sense being placed under the h1; however semantically it may make more sense being placed above the h1 for screen reader-->
+                <!-- How/In what order would screen reader read the above tags?  -->
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -36,47 +44,75 @@
             </div>
         </section>
         <section>
+            <!-- <img src="../harper-designAndAssets/assets/home-image-2.jpg" alt=""> -->
+                <!-- not certain if this image is semantic; may be easier to style as html image than background image -->
+                <!-- need to revisit and give image alt description -->
             <div class="wrapper sectionTwo">
+                <div class="photos">
                 <h3>photos</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident accusantium quasi neque recusandae, modi tenetur repudiandae optio velit animi! Fugit soluta a in cum alias quia.</p>
+                </div>
+                <div class="about">
                 <h3>about</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsa vel eos incidunt dolorum deserunt nostrum laudantium saepe maiores ex veritatis, corporis dolorem numquam voluptatum qui?</p>
+                </div>
+                <div class="blog">
                 <h3>blog</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora necessitatibus libero in unde esse doloribus voluptatem eius quaerat, accusantium debitis, accusamus molestiae vel enim ut exercitationem.</p>
+                </div>
+                <div class="contactMe">
                 <h3>contact me</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum eius culpa corporis tenetur inventore nihil similique molestiae eveniet? Expedita aliquid suscipit beatae provident officia nulla. Laboriosam?</p>
+                </div>
             </div>
+            <!-- decided that these headers do not double as links as they have lorem ipsum text beneath them -->
+            <!-- not sure if this group of <header>+<p>'s are individual sections or if they all fall under one related section' -->
         </section>
         <section>
-            <div></div>
+            <!-- may need to add div around sections 3 & 4 to flex -->
             <div class="wrapper sectionthree">
                 <img src="../harper-designAndAssets/assets/home-image-3.jpg" alt="two people surfing in the ocean at a distance during either sunset or sunrise">
+                <div class="harpersTravels">
                 <h2>harper's travels</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse autem consequatur perferendis ipsa. Beatae dolore quasi alias accusamus. Harum maiores in iusto? Autem aperiam odio repudiandae eligendi eum officiis expedita!</p>
                     <a href="#">read more</a>
-                    <!-- may have to revisit link to uodate link address-->
+                    <!-- may have to revisit link to uodate link address and confirm whether to use <button> or <a> tag-->
+                </div>
             </div>
         </section>
         <section>
             <div class="wrapper sectionFour">
+                <div class="favouriteThngs">
                 <h2>favorite things</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci, sed, explicabo illum qui eaque pariatur doloremque ipsa aliquid iure fuga et in iste eius quia totam numquam, obcaecati molestias.</p>
                      <a href="">read more</a>
                 <img src="../harper-designAndAssets/assets/home-image-4.jpg" alt="top corner area of indutrial building">
+                </div>
             </div>
+            <!-- not sure if <section> 3 & 4 are considered different sections; stylistically they look similar; not sure if <section> 3, 4 & 5 belong in one section and should be divided by <div>'s instead of sections.  -->
         </section>
         <section>
             <div class="wrapper sectionFive">
-                <img src="" alt="person with dark long wavy hair smiling just away from the camera">
+                <img src="" alt="person with dark long wavy hair joyfully smiling while looking slightly away from the camera">
+                <div class="harpersJourney">
                 <h2>harper's journey</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla odio, facilis laudantium provident, repudiandae possimus modi ab cum reprehenderit maiores enim placeat sit vel? Dolore labore at corporis tempora optio.</p>
                     <a href="">find out more</a>
+                </div>
             </div>
         </section>
+        <section>
+            <div class="sectionSix">
+                <img class="imgageSix" src="../harper-designAndAssets/assets/home-image-6.jpg" alt="top corner of light pink building against clear blue day time sky">
+                <img class="imageSeven" src="../harper-designAndAssets/assets/home-image-7.jpg" alt="Artistic photo of airplane flying in through a multip;e shaded cloudy sky. Clouds are various shades of bluish gray towards the bottom. Clouds are various shades of light smokey gray and red, coral, peach or orannge towards the top. There are some peaks of sunlight in the vertical center">
+                <img class="imageEight" src="../harper-designAndAssets/assets/home-image-8.jpg" alt="abstract image made of shades of light blue light, fuschia, light pink and white. Image almost looks like a water painting">
+            </div>
+        </section>
+        <!-- not sure if images are semtantic and if so, what section do they apply to-->
     </main>
     <footer>
         <p>Copyright 2018 HackerYou</p>
     </footer>
-    <!-- not sure if images are semtantic -->
+    <!-- unsure of how descriptive to be of images in alt atribute. Want to be simplistic while also describing an image to nonsighted users in a way that they can enjoy them as equally as sighted users -->
 </body>
 </html>
