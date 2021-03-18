@@ -34,6 +34,7 @@ header{
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        list-style-type: none;
         li{
             display: inline-block;
             list-style-type: none;
@@ -69,4 +70,31 @@ h1{
 // header a{
     // font-size: 100px;
 // }
+
+form{
+    input, textarea{
+        border: 1px solid $white;
+        color: $black;
+        font-family: $bodyFont;
+    }
+}
+
+button{
+    background-color: $accent;
+    margin-top: 10px;
+    box-shadow: none;
+    
+}
+
+
+
+footer{
+    background-color:$black ;
+    color: $white;
+    // height: 40px;
+        // Don't know how to shrink footer height without having white space underneath
+    text-align: center;
+    width: 100%;
+
+}
 

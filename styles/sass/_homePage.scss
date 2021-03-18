@@ -1,3 +1,8 @@
+        // Body
+    p{
+        padding: 3.5vh 0;
+    }
+        
         // Header
 .headerImage{
     background-color: $white;
@@ -20,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     margin: 10vh;
 }
 
@@ -29,7 +34,7 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
 
-    margin-left: 50px;
+    margin-left: 75px;
     position: relative;
     img{
         height: calc( 172px * 0.75);
@@ -39,19 +44,189 @@
         top: -20%;
         right: -10%;
     }
+    // img's & h1 may need to be bigger
 }
+
 
         // Main
         // Section 1
 .sectionOne{
     background-color: $primary4;
-    height: 50vh;
-    .wrapper{
+    height: 60vh;
+    .sect1flex{
         display: flex;
-        align-items: center;
+        align-items:flex-end;
         justify-content: flex-end;
     }
 }
 .section1{
+    // height: 25vh;
+    margin-top: 15vh;
     width: 50%;
 }
+
+            // Section 2
+
+.sectionTwo{
+    background-color: $primary4;
+    height: 140vh;
+    display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    .section2{
+    background-image: url(file:///C:/Users/griar/Documents/tech/Coding/juno/winter2-bootcamp-2021/assignments-projects/project-1/harper-designAndAssets/assets/home-image-2.jpg);
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    // align-items: flex-end;
+    .wrapper{
+        margin-top: 73vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
+    .sect2{
+        width: 50%
+    }
+}
+
+            // Section 3 & 4
+.sectionThree, .sectionFour{
+    height: 50vh;
+    max-width: 1200px;
+    .flex{
+        display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // text-align: center;
+    }
+    img{
+        height: 303.375px;
+        width: 480px;
+    }
+}
+
+.harpersTravels, .favouriteThings{
+    // padding: 0 8%;
+    // width: 50%;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    p{
+        padding: 3.5vh 0;
+    }
+}
+
+.sectionThree{
+    // display: flex;
+    position: relative;
+    .travelsImgBackground{
+        background-color: $primary2;
+        height: 303.375px;
+        width: 48.75%;
+        margin-right: 8%;
+        position: absolute;
+        // top: 20%;
+    }
+    img{
+        margin-left: 7.5%;
+        position: absolute;
+        bottom: 12%;
+    }
+}
+
+.harpersTravels{
+    // margin-left: 8%;
+    padding-left: 8%;
+    padding-top: 6.5%;
+    position: absolute;
+    left: 50%;
+}
+
+.favouriteThings{
+    // padding: 0 8%;
+    width: 50%;
+    display: flex;
+    flex-direction: clumn;
+    position: absolute;
+    z-index: 30;
+    a{
+        align-self: flex-end
+    }
+}
+
+        // Section 4
+    .sectionFour{
+        display: flex;
+        // flex-direction: row-reverse;
+        justify-content: flex-endS;
+        position: relative;
+        // margin: 0;
+        img{
+            // margin-right: 7.5%;
+            position: absolute;
+            z-index: 20;
+            // top: 12%;
+        }
+        .favImgBackground{
+            background-color: $primary3;
+            height: 303.375px;
+            // width: 48.75%;.]
+            // margin-right: 8%;
+            position: absolute;
+            z-index: 10;
+        }
+    }
+// .sectionFour{
+//     height: 50vh;
+//     .wrapper{
+//         display: flex;
+//         // flex-direction: row-reverse;
+//         img{
+//             height: 303.375px;
+//             width: 480px ;
+//         }
+//     }
+
+    
+// }
+
+        // Section 5
+.sectionFive{
+    background-color: $primary4;
+    height: 60vh;
+    .wrapper{
+        display: flex;
+        padding-top: 7%;
+        img{
+            height: 228px;
+            width: 228px;
+        }
+        }
+    }
+.harpersJourney{
+    // width: 75%;
+    padding: 0 8%;
+}
+
+
+        // Section 6
+.sectionSix{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    div{
+        display: flex;
+        justify-content: center;
+    }
+}
+.image{
+    height: 300px;
+    width: 300px;
+    margin: 0 2%;
+}
+
+// at width 1137px header moves below; elements start to overlap; header may need to be longer vh at this point
+// section 3,4 and 6 need to display column at 50% width
