@@ -228,5 +228,27 @@
     margin: 0 2%;
 }
 
+.subscribeBox{
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    border: 1px solid black;
+    height: 20vh;
+    width: 50%;
+    position: absolute;
+    visibility: hidden;
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        button{
+            color: $white;
+        }
+    }
+}
+
 // at width 1137px header moves below; elements start to overlap; header may need to be longer vh at this point
 // section 3,4 and 6 need to display column at 50% width

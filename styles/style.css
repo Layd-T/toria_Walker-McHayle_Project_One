@@ -243,6 +243,7 @@ form {
 h1, h2, h3, h4,
 button,
 a {
+  height: 10px;
   color: #171717;
   font-family: oswald, sans-serif;
   font-weight: bold;
@@ -320,8 +321,6 @@ form input, form textarea {
 button {
   background-color: #f38d8d;
   margin-top: 10px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 footer {
@@ -570,6 +569,44 @@ p {
   margin: 0 2%;
 }
 
+.subscribeBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #171717;
+  border: 1px solid black;
+  height: 20vh;
+  width: 50%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.subscribeBox form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribeBox form button {
+  color: #fff;
+}
+
 .visually-hidden {
   position: absolute !important;
   height: 1px;
@@ -617,6 +654,13 @@ p {
 }
 
 .a a {
+  font-family: cabin, sans-serif;
+  font-size: 1rem;
+  padding: 25px 5%;
+}
+
+.two a {
+  font-family: cabin, sans-serif;
   font-size: 1rem;
   padding: 25px 5%;
 }
@@ -685,7 +729,7 @@ p {
   margin-top: 25px;
 }
 
-sect2 {
+.sect2 {
   background-color: #F6f6f6;
 }
 

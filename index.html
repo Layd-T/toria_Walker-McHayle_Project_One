@@ -10,6 +10,16 @@
     <title>Harper</title>
 </head>
 <body>
+    <div class="subscribeBox">
+        <form action="">
+            <!-- <div class="subscriptionBoxInner"> -->
+                <label for="subscriberEmail" class="visually-hidden">Email Address</label>
+                <input type="email" id="contactEmail" name="emailAdress" placeholder="Email address" required>
+            
+                <button class="formButton">submit</button>
+            <!-- </div>     -->
+        </form>
+    </div>
     <header>
         <div class="header">
         <div class="wrapper" >
@@ -19,16 +29,16 @@
                     <li><a href="">about</a></li>
                     <li class="harperLink"><a href="" class="harperLink">harper</a></li>
                     <!-- do not know if this is a link or a header -->
-                    <li><a href="html/blogPost.html">blog</a></li>
-                    <li><a href="html/contact-index.html">contact</a></li>
+                    <li><a href="./html/blogPost.html">blog</a></li>
+                    <li><a href="./html/contact-index.html">contact</a></li>
                 </ul>
             </nav>
             <div class="headerFlex">
                 <div class="headerImageBackground">
-                        <img src="../harper-designAndAssets/assets/home-image-1.jpg" alt="Photo of person from the shoulder up laying down surrounded by balloons in photo"  class="headerImage">
+                        <img src="./harper-designAndAssets/assets/home-image-1.jpg" alt="Photo of person from the shoulder up laying down surrounded by balloons in photo"  class="headerImage">
                 </div>
                 <div class="harper">
-                    <img src="../harper-designAndAssets/assets/circle-text.png" alt="everyday life with" class="everydayLifeImage">
+                    <img src="./harper-designAndAssets/assets/circle-text.png" alt="everyday life with" class="everydayLifeImage">
                     <h1>harper</h1>
                     <!-- design wise I thought the everyday life image would make more sense being placed under the h1; however semantically it may make more sense being placed above the h1 for screen reader-->
                     <!-- How/In what order would screen reader read the above tags?  -->
@@ -82,7 +92,7 @@
                 <div class="travelsImgBackground">
                 </div>
                 <div class="sect3 flex">
-                <img src="../harper-designAndAssets/assets/home-image-3.jpg" alt="two people surfing in the ocean at a distance during either sunset or sunrise">
+                <img src="./harper-designAndAssets/assets/home-image-3.jpg" alt="two people surfing in the ocean at a distance during either sunset or sunrise">
                
                 <div class="harpersTravels">
                 <h2>harper's travels</h2>
@@ -100,7 +110,7 @@
                      <a href="">read more</a>
                 </div>
                 <div>
-                <img src="../harper-designAndAssets/assets/home-image-4.jpg" alt="top corner area of indutrial building">
+                <img src="./harper-designAndAssets/assets/home-image-4.jpg" alt="top corner area of indutrial building">
                 <div class="favImgBackground"></div>
                 </div>
             </div>
@@ -110,7 +120,7 @@
         <section class="sectionFive">
             <div class="wrapper">
                 <div class="jourImgBackground">
-                <img src="../harper-designAndAssets/assets/home-image-5.jpg" alt="person with dark long wavy hair joyfully smiling while looking slightly away from the camera">
+                <img src="./harper-designAndAssets/assets/home-image-5.jpg" alt="person with dark long wavy hair joyfully smiling while looking slightly away from the camera">
                 </div>
                 <div class="harpersJourney">
                 <h2>harper's journey</h2>
@@ -122,9 +132,9 @@
         <section class="sectionSix">
             <div class="wrapper">
                 <div>
-                <img class="image six" src="../harper-designAndAssets/assets/home-image-6.jpg" alt="top corner of light pink building against clear blue day time sky">
-                <img class="image seven" src="../harper-designAndAssets/assets/home-image-7.jpg" alt="Artistic photo of airplane flying in through a multip;e shaded cloudy sky. Clouds are various shades of bluish gray towards the bottom. Clouds are various shades of light smokey gray and red, coral, peach or orannge towards the top. There are some peaks of sunlight in the vertical center">
-                <img class="image eight" src="../harper-designAndAssets/assets/home-image-8.jpg" alt="abstract image made of shades of light blue light, fuschia, light pink and white. Image almost looks like a water painting">
+                <img class="image six" src="./harper-designAndAssets/assets/home-image-6.jpg" alt="top corner of light pink building against clear blue day time sky">
+                <img class="image seven" src="./harper-designAndAssets/assets/home-image-7.jpg" alt="Artistic photo of airplane flying in through a multip;e shaded cloudy sky. Clouds are various shades of bluish gray towards the bottom. Clouds are various shades of light smokey gray and red, coral, peach or orannge towards the top. There are some peaks of sunlight in the vertical center">
+                <img class="image eight" src="./harper-designAndAssets/assets/home-image-8.jpg" alt="abstract image made of shades of light blue light, fuschia, light pink and white. Image almost looks like a water painting">
             </div>
             </div>
         </section>
@@ -134,5 +144,19 @@
         <p>Copyright 2018 HackerYou</p>
     </footer>
     <!-- unsure of how descriptive to be of images in alt atribute. Want to be simplistic while also describing an image to nonsighted users in a way that they can enjoy them as equally as sighted users -->
+    <script>
+        // add event listener for subscribe pop up for when user scrolls to certain point on homepage or when user is on homepage for (x) amount of time.
+
+
+        // create event listener for subscribion box
+            // 1. Create variable
+        const subscribe = document.querySelector ('body');
+        body.addEventListener('mouseover', function(event){
+            const openSubscribeBox = document.getElementsByClassName('subscribeBox');
+            subcribeBox.style.visibility = "visible";
+        })
+        // having difficulty displaying subcribe box
+        // not sure if creating "subscription" box modal would be better created in JS or HTML/CSS
+    </script>
 </body>
 </html>

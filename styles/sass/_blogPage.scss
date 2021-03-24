@@ -28,6 +28,7 @@
 .blogHeader{
     background-image: url(../../../harper-designAndAssets/assets/blog-image-1.jpg);
     height: 80vh;
+    // background-size: cover;
     position: relative;
     h1{
         position: absolute;
@@ -38,14 +39,30 @@
     img{
         height: 324.75px;
         width: 232.5px;
+        // margin-bottom: 40px;
     }
     a{
+        font-family: $bodyFont;
+        font-size: 1rem;
+        // background-color: $white;
+        padding: 25px 5%;
+        // width: 310px;
+    }
+    h4{
+        // margin-top: 20px;
+    }
+}
+
+.two{
+    a{
+        font-family: $bodyFont;
         font-size: 1rem;
         // background-color: $white;
         padding: 25px 5%;
         // width: 310px;
     }
 }
+
 
 .blogMid{
     display: grid;
@@ -94,7 +111,7 @@
     }
 }
 
-sect2{
+.sect2{
     background-color: $primary4;
 }
 
