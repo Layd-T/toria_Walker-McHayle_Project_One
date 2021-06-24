@@ -1,0 +1,136 @@
+.visually-hidden { 
+    position: absolute !important;
+    height: 1px; 
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
+  }
+        
+        // Body
+.blogBody{
+    background-color: $primary4 ;
+    h3{
+        color: $black;
+        font-family: $bodyFont;
+        font-size: 1rem;
+        font-weight: normal;
+        text-transform: none;
+    }
+    section{
+        background-color: $white;
+        margin: 25px 0;
+        padding: 25px 5%;
+    }
+}
+
+.blogHeader{
+    background-image: url(../../../harper-designAndAssets/assets/blog-image-1.jpg);
+    height: 80vh;
+    // background-size: cover;
+    position: relative;
+    h1{
+        position: absolute;
+        top:100%;
+    }
+}
+.a{
+    img{
+        height: 324.75px;
+        width: 232.5px;
+        // margin-bottom: 40px;
+    }
+    a{
+        font-family: $bodyFont;
+        font-size: 1rem;
+        // background-color: $white;
+        padding: 25px 5%;
+        // width: 310px;
+    }
+    h4{
+        // margin-top: 20px;
+    }
+}
+
+.two{
+    a{
+        font-family: $bodyFont;
+        font-size: 1rem;
+        // background-color: $white;
+        padding: 25px 5%;
+        // width: 310px;
+    }
+}
+
+
+.blogMid{
+    display: grid;
+    grid-template-columns: 33% 66%;
+    column-gap: 0%;
+    margin-top: 50px;
+    // justify-content: space-between;
+    aside{
+        // width: 310px;
+        margin-right: 5%;
+        p{
+            width: 20vw
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        background-color: $accent;
+        margin-top: 10px;
+        box-shadow: none;
+        
+    }
+}
+
+.nameEmail{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    input {
+        height: 50px;
+        width: 49%;
+    }
+}
+
+.sec1{
+    h3{
+        margin-top: 25px;
+    }
+}
+
+.sect2{
+    background-color: $primary4;
+}
+
+.bEntry{
+    background-color: $white;
+    display: flex;
+    img{
+        height: 89px;
+        width: 89px;
+    }
+    div{
+        margin-left: 5%;
+    }
+}
+
+.maggie{
+    margin-bottom: 25px;
+}
+
+// .postComment{
+
+// }

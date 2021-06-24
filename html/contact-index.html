@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Harper-Contact</title>
+</head>
+<body class="contactBody">
+    <header>
+        <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="">about</a></li>
+                <li class="harperLink"><a href="" class="harperLink">harper</a></li>
+                <!-- do not know if this is a link or a header -->
+                <li><a href="./html/blogPost.html">blog</a></li>
+                <li><a href="./html/contact-index.html">contact</a></li>
+            </ul>
+        </nav>
+        <h1>contact me</h1>
+    </div>
+    </header>
+    <div class="wrapper midSect"></div>
+        <aside class="contactAside">
+            <address>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#" 
+                               aria-label="Go Harper's Facebook page">
+                                <i aria-hidden="true" 
+                                   class="fab fa-facebook-f">
+                                <!-- </i> -->
+                                <i class="fab fa-facebook-f"></i> 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                               aria-label="Go to Harper's Twitter page">
+                                <i aria-hidden="true" 
+                                   class="fab fa-twitter">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                               aria-label= "Go to Harper's Instagram  page">
+                                <i aria-hidden="true" 
+                                   class="fab fa-instagram">
+                                </i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" 
+                               aria-label="Go to Harper's Snapchat page">
+                                <i aria-hidden="true"
+                                   class="fab fa-snapchat-ghost">
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            <!-- not sure if nav tag is needed -->
+            <!-- revisit; make sure a/li tags have acurate names and attributes  -->
+                <!-- <span>info@email.com</span>  -->
+                <a href = "mailto: abc@example.com">email address</a><br>
+                <!-- <a> was an idea from fellow group mate; On one hand I'm not sure if it's neccessary being that there is a contact me form on the page; on the other hand it might make a for a good alternative  -->
+                <!-- will looks to see if i can make a tag <a> tag a link to copu email address -->
+                123-456-7890<br>123 Queen Street West, Unit10<br>Toronto, Ontario<br>M5V2D5<br>
+            </address>
+        <!-- not clear on how to include address/contact info -->
+        </aside>
+        <main>
+            <section>
+                <form action="sendEmail.php" method="POST" class="contactMe" name="contactForm">
+                <!-- not sure how to determine server address   for action atribute -->
+                    <div>
+                    <label for="name" class="visually-hidden">name</label>
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    
+                    <label for="contactEmail" class="visually-hidden">email address</label>
+                    <input type="email" id="contactEmail" name="emailAdress" placeholder="Email address" required>
+                    </div>
+
+                    <div class="message">
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea name="messageBody" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <!-- How should columns and rows be sppecified?; signifies height and kength-->
+                    
+                    <button class="formButton">submit</button>
+                    </div>
+                </form>
+                <!-- need to revisit form to make sure all necessary atributes and tags are included and accurtate -->
+            </section>
+        </main>
+    </div>
+        <footer>
+            <p>Copyright 2018 HackerYou</p>
+            <!-- revivisit; add copyright symbol -->
+        </footer>
+        
+    <script>
+            // add event listener for subscribe pop up for when user scrolls to certain point on homepage or when user is on homepage for (x) amount of time.
+    
+    
+            // create event listener for subscribion box
+                // 1. Create variable
+            const subscribe = document.querySelector ('body');
+            body.addEventListener('mouseover')
+    </script>
+    
+    
+</body>
+</html>

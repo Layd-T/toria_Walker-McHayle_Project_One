@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Harper-Blog Post</title>
+</head>
+<body class="blogBody">
+    <header>
+        <div class="blogHeader">
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li class="harperLink"><a href="" class="harperLink">harper</a></li>
+                    <!-- do not know if this is a link or a header -->
+                    <li><a href="./html/blogPost.html">blog</a></li>
+                    <li><a href="./contact-index.html">contact</a></li>
+                </ul>
+            </nav>
+            <h1>blog</h1>
+            <!-- possibly hass position relative -->
+        </div>
+    </div>
+    </header>
+        <div class="wrapper blogMid">
+            <aside>
+                <section class="a one">
+                    <div class="s">
+                        <img src="../harper-designAndAssets/assets/blog-image-2.jpg" alt="photoshoot picture of harper laying down looking at right hand raised abover her head while wearing glamorous make up, a loose-fitted pink velvet or velor like material sweater jacket and a deep-cut v-neck lace-looking blouse or dress">
+                        <!-- need to review image descriptions -->
+                        <h4>about harper</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, modi.</p>
+                    </div>
+                </section>
+                <section class="a two">
+                    <div class="s">
+                        <h4>recent posts</h4>
+                         <nav>
+                            <ul>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                                <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+                            </ul>
+                            <!-- not sure if these recent posts are considered linkss -->
+                        </nav>
+                    </div>
+                </section>
+            </aside>
+            <main>
+                <section class="sec1">
+                    <div class="s">
+                    <h2>my favourite travel destinations</h2>
+                    <h3>Monday October 8th, 2018 by Harper</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos delectus inventore neque molestias laboriosam. Consequuntur magni cum ea voluptas nobis?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium eius, facilis rerum saepe dolores, repudiandae cupiditate ducimus, suscipit quo voluptas consequatur quaerat itaque. Nesciunt?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque esse id eos ipsum temporibus magni mollitia nulla? Doloribus culpa maxime autem, voluptatem aspernatur eos voluptatum sint dicta cumque delectus nostrum explicabo. Suscipit ab delectus eum expedita illo repellat, ducimus at nisi, iure vero officiis rem, dignissimos laudantium fuga aut cupiditate.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore dolorem incidunt aliquid possimus quia saepe.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad sunt quisquam laboriosam temporibus enim similique itaque! Dolorum accusamus ut labore quod vitae.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati ducimus quia neque, voluptate placeat, accusantium tenetur quae inventore perspiciatis facere velit natus aperiam quas corporis veritatis dicta quasi commodi consequuntur autem expedita. Magni dolorum perspiciatis hic illo ratione, vel sint. Fugiat officia nam quos est id exercitationem sequi praesentium.</p>
+                     </div>
+                </section>
+                <section class="sec2">
+                    <div class="s bEntry maggie">
+                        <img src="../harper-designAndAssets/assets/blog-image-3.jpg" alt="thumbnail of Maggie with black straight bob cut with bangs">
+                    <div>
+                    <h3>Tuesday October 9th, 2018 by Maggie</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, expedita enim? Enim, consequuntur esse harum atque cupiditate quos autem quod ex, quasi eum ad est.</p>
+                    </div>
+                    </div>
+                    <div class="s bEntry daisy">
+                    <img src="../harper-designAndAssets/assets/blog-image-4.jpg" alt="thumbnail of Daisy with blonde straight hair blowing bubble gum">
+                    <div>
+                    <h3>Wednesday October 10th, 2018 by Daisy</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eligendi quam magnam. Deleniti provident tenetur, perferendis neque cumque temporibus? Beatae tempore explicabo sint sed reiciendis.</p>
+                    </div>
+                    </div>
+                </section>
+                <section>
+                    <form action="sendEmail.php" method="POST" class="postComment" name="commentForm">
+                    <!-- not sure how to determine server address  for action atribute -->
+                        <div class="nameEmail">
+                            <label for="name" class="visually-hidden">name</label>
+                             <input type="text" id="name" name="name" placeholder="Name" required>
+                        
+                            <label for="contactEmail" class="visually-hidden">email address</label>
+                            <input type="email" id="contactEmail" name="emailAdress" placeholder="Email address" required>
+                        </div>
+    
+                        <div class="comment">
+                            <label for="message" class="visually-hidden">Message</label>
+                            <textarea name="commenty" id="message" cols="30" rows="10" placeholder="Comment"></textarea>
+                            <!-- How should columns and rows be sppecified?; signifies height and length-->
+                        
+                            <button class="formButton">Post Comment</button>
+                        </div>
+                    </form>
+                    <!-- need to revisit form to make sure all necessary atributes and tags are included and accurtate -->
+                </section>>
+            </main>
+        </div>
+            <footer>
+                <p>Copyright 2018 HackerYou</p>
+                <!-- revisit; may need to add copyright symbol -->
+            </footer>
+            
+</body>
+</html>
