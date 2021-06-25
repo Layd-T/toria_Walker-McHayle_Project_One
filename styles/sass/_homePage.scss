@@ -24,9 +24,10 @@
 .headerFlex{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    // align-items: center;
     // justify-content: center;
     margin: 10vh;
+    position: relative;
 }
 
 .harper{
@@ -34,14 +35,17 @@
     flex-direction: row-reverse;
     flex-wrap: wrap;
 
-    margin-left: 75px;
-    position: relative;
+    // margin-left: 75px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    // align-self: center;
     img{
         height: calc( 172px * 0.75);
         width: calc( 182px * 0.75);
 
         position: absolute;
-        top: -20%;
+        top: -30px;
         right: -10%;
     }
     // img's & h1 may need to be bigger
@@ -69,25 +73,46 @@
 
 .sectionTwo{
     background-color: $primary4;
-    height: 140vh;
+    // height: 140vh;
     display: flex;
-    // flex-direction: column;
+    flex-direction: column;
     // justify-content: flex-end;
-    .section2{
-    background-image: url(file:///C:/Users/griar/Documents/tech/Coding/juno/winter2-bootcamp-2021/assignments-projects/project-1/harper-designAndAssets/assets/home-image-2.jpg);
+    .s2bgroundimg{
+    background-image: url(/harper-designAndAssets/assets/home-image-2.jpg);
     background-repeat: no-repeat;
-    height: 60vh;
-    width: 100%;
-    display: flex;
+    background-size: cover;
+    height: 50vh;
+    }
+    // width: 100%;}
+    // display: flex;
     // align-items: flex-end;
     .wrapper{
-        margin-top: 73vh;
+        margin-top: 10vh;
         display: flex;
         flex-wrap: wrap;
     }
+    
+    .fontAwesome{
+        display:flex;
+        // margin-right: 1%;
+        width: 49%;
+        .icon{
+            background-color: $primary3;
+            border: $primary3 1px solid;
+            border-radius: 50%;
+            height: 40px;
+            width: 125px;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .fas{
+                font-size: 16px;
+            }
+        }
     }
-    .sect2{
-        width: 50%
+    .photos, .blog{
+        margin-right: 2%;
     }
 }
 
