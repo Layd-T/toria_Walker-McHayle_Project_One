@@ -243,7 +243,6 @@ form {
 h1, h2, h3, h4,
 button,
 a {
-  height: 10px;
   color: #171717;
   font-family: oswald, sans-serif;
   font-weight: bold;
@@ -255,12 +254,15 @@ a {
 p {
   font-family: cabin, sans-serif;
   font-size: 1rem;
+  letter-spacing: 0px;
   line-height: 32px;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 85%;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -293,7 +295,13 @@ header ul li {
 }
 
 header ul a {
+  display: inline-block;
+  background-color: transparent;
   font-size: 0.70rem;
+  font-size: 1rem;
+  height: 10px;
+  height: 40px;
+  padding: 8px 18px;
 }
 
 header ul a:hover {
@@ -302,11 +310,17 @@ header ul a:hover {
 
 h1 {
   font-size: 6rem;
+  font-size: 7rem;
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.1rem;
 }
 
 .harperLink {
   font-size: 1.5rem;
+  font-size: 1.75rem;
   margin-top: 2vh;
   padding: 0 15px;
   text-align: center;
@@ -323,31 +337,35 @@ button {
   margin-top: 10px;
 }
 
+a {
+  display: inline-block;
+  background-color: #f38d8d;
+  height: 40px;
+  padding: 8px 18px;
+}
+
+a:focus {
+  border: 2px solid #0e0000;
+}
+
+a:active {
+  color: blue;
+}
+
 footer {
   background-color: #171717;
   color: #fff;
   text-align: center;
+  height: 50px;
   width: 100%;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 p {
   padding: 3.5vh 0;
-}
-
-.headerImage {
-  background-color: #fff;
-  height: 525px;
-  width: 375px;
-  position: absolute;
-  position: relative;
-  bottom: 15px;
-  right: 15px;
-}
-
-.headerImageBackground {
-  background-color: #fff;
-  height: 525px;
-  width: 375px;
 }
 
 .headerFlex {
@@ -360,7 +378,29 @@ p {
   position: relative;
 }
 
-.harper {
+.headerFlex .headerImgFlex {
+  position: relative;
+  right: 8%;
+}
+
+.headerFlex .headerImgFlex .headerImage {
+  background-color: #fff;
+  height: 525px;
+  width: 375px;
+  position: relative;
+  bottom: 525px;
+}
+
+.headerFlex .headerImgFlex .headerImageBackground {
+  background-color: #fff;
+  height: 525px;
+  width: 375px;
+  position: relative;
+  bottom: -15px;
+  left: 15px;
+}
+
+.headerFlex .harperTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,16 +410,20 @@ p {
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  right: 5%;
   position: absolute;
   top: 150px;
   left: 500px;
 }
 
-.harper img {
+.headerFlex .harperTitle img {
   height: calc( 172px * 0.75);
+  height: calc( 172px * 0.9);
   width: calc( 182px * 0.75);
+  width: calc( 182px * 0.9);
   position: absolute;
-  top: -30px;
+  top: -40px;
   right: -10%;
 }
 
@@ -400,13 +444,15 @@ p {
           justify-content: flex-end;
 }
 
-.section1 {
-  margin-top: 15vh;
+.sectionOne .sect1flex .section1 {
+  margin-top: 65px;
+  margin-top: 79px;
   width: 50%;
 }
 
 .sectionTwo {
   background-color: #F6f6f6;
+  height: 150vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,8 +469,11 @@ p {
   height: 50vh;
 }
 
-.sectionTwo .wrapper {
-  margin-top: 10vh;
+.sectionTwo .sec2 {
+  margin-top: 15vh;
+  margin-top: 79px;
+  margin-bottom: 15vh;
+  margin-bottom: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,6 +514,10 @@ p {
   margin-right: 2%;
 }
 
+.sectionTwo .contact, .sectionTwo .blog {
+  margin-top: 2%;
+}
+
 .sectionThree, .sectionFour {
   height: 50vh;
   max-width: 1200px;
@@ -486,89 +539,181 @@ p {
 }
 
 .sectionThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  margin-bottom: 5px;
+  margin-bottom: 78px;
+}
+
+.sectionThree .sec3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
   position: relative;
 }
 
-.sectionThree .travelsImgBackground {
+.sectionThree .sec3 .harpersTravelsImg {
+  position: relative;
+}
+
+.sectionThree .sec3 .harpersTravelsImg .travelsImgBackground {
   background-color: #68B0C1;
   height: 303.375px;
+  height: 53vh;
   width: 48.75%;
-  margin-right: 8%;
+  width: 50vw;
+  width: 650px;
+  width: 683px;
+  position: relative;
   position: absolute;
+  z-index: 10;
+  bottom: 5px;
+  left: -18.4%;
+  left: -120px;
+  right: 0%;
 }
 
-.sectionThree img {
-  margin-left: 7.5%;
+.sectionThree .sec3 .harpersTravelsImg img {
+  height: calc(400px * 0.85);
+  width: calc(640px * 0.80);
+  width: calc(640px * 0.85);
   position: absolute;
+  position: relative;
   bottom: 12%;
+  bottom: 385px;
+  bottom: 40px;
+  bottom: 24px;
+  bottom: 42px;
+  z-index: 20;
 }
 
-.harpersTravels {
-  padding-left: 8%;
-  padding-top: 6.5%;
+.sectionThree .sec3 .harpersTravels {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   position: absolute;
+  position: relative;
+  bottom: 7.6px;
   left: 50%;
+  left: 65%;
+  left: 10%;
 }
 
-.favouriteThings {
+.sectionThree .sec3 .harpersTravels p {
+  width: 35vw;
+}
+
+.sectionFour {
+  height: 50vh;
+  position: relative;
+}
+
+.sectionFour .sec4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sectionFour .sec4 .favouriteThings {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: clumn;
-          flex-direction: clumn;
-  position: absolute;
-  z-index: 30;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.favouriteThings a {
+.sectionFour .sec4 .favouriteThings a {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.sectionFour {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: flex-endS;
-      -ms-flex-pack: flex-endS;
-          justify-content: flex-endS;
-  position: relative;
-}
-
-.sectionFour img {
+.sectionFour .sec4 .favouriteThingsImg img {
   position: absolute;
+  position: relative;
+  height: calc(400px * 0.85);
+  width: calc(640px * 0.80);
+  width: calc(640px * 0.85);
+  left: 145px;
   z-index: 20;
 }
 
-.sectionFour .favImgBackground {
+.sectionFour .sec4 .favouriteThingsImg .favI {
   background-color: #B9DDE7;
   height: 303.375px;
+  height: 40vh;
+  height: 53vh;
+  width: 50vw;
+  width: 650px;
   position: absolute;
+  top: 18px;
+  right: -150px;
+  right: -149px;
   z-index: 10;
 }
 
 .sectionFive {
   background-color: #F6f6f6;
-  height: 60vh;
+  height: 80vh;
+  position: relative;
 }
 
-.sectionFive .wrapper {
+.sectionFive .sec5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 7%;
 }
 
-.sectionFive .wrapper img {
-  height: 228px;
-  width: 228px;
+.sectionFive .sec5 .journeyImg {
+  margin-top: 30px;
 }
 
-.harpersJourney {
+.sectionFive .sec5 .journeyImg img {
+  height: 228px;
+  height: calc(228px * 1.2);
+  width: 228px;
+  width: calc(228px * 1.2);
+  position: relative;
+  z-index: 20;
+}
+
+.sectionFive .sec5 .journeyImg .journImgBackground {
+  background-color: #227284;
+  height: calc(228px * 1.2);
+  width: calc(228px * 1.2);
+  position: absolute;
+  bottom: 130px;
+  bottom: 100px;
+  left: 150px;
+  z-index: 10;
+}
+
+.sectionFive .sec5 .harpersJourney {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
   padding: 0 8%;
+}
+
+.sectionFive .sec5 .harpersJourney p {
+  margin: 23px 0;
+}
+
+.sectionFive .sec5 .harpersJourney a {
+  display: inline-block;
 }
 
 .sectionSix {
@@ -597,42 +742,15 @@ p {
   margin: 0 2%;
 }
 
-.subscribeBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #171717;
-  border: 1px solid black;
-  height: 20vh;
-  width: 50%;
-  position: absolute;
-  visibility: hidden;
-}
-
-.subscribeBox form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.subscribeBox form button {
-  color: #fff;
+@media (max-width: 1250px) {
+  .headerImgFlex {
+    right: 20px;
+  }
+  .harperTitle {
+    left: 25%;
+    right: 0%;
+    margin-left: 10%;
+  }
 }
 
 .visually-hidden {
