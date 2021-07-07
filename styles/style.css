@@ -372,15 +372,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: 10vh;
+  margin: 6vh 0;
   position: relative;
-}
-
-.headerFlex .headerImgFlex {
-  position: relative;
-  right: 8%;
 }
 
 .headerFlex .headerImgFlex .headerImage {
@@ -401,18 +395,14 @@ p {
 }
 
 .headerFlex .harperTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
-  right: 5%;
-  position: absolute;
+  margin-left: 75px;
+  margin-left: 10%;
   top: 150px;
   left: 500px;
 }
@@ -422,9 +412,11 @@ p {
   height: calc( 172px * 0.9);
   width: calc( 182px * 0.75);
   width: calc( 182px * 0.9);
-  position: absolute;
+  position: relative;
   top: -40px;
   right: -10%;
+  top: 115px;
+  left: 355px;
 }
 
 .sectionOne {
@@ -494,7 +486,9 @@ p {
   border-radius: 50%;
   height: 40px;
   width: 125px;
+  width: 130px;
   margin-right: 20px;
+  margin-right: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,6 +636,7 @@ p {
   width: calc(640px * 0.80);
   width: calc(640px * 0.85);
   left: 145px;
+  left: 127px;
   z-index: 20;
 }
 
@@ -651,9 +646,10 @@ p {
   height: 40vh;
   height: 53vh;
   width: 50vw;
-  width: 650px;
+  width: 668px;
   position: absolute;
   top: 18px;
+  left: 681px;
   right: -150px;
   right: -149px;
   z-index: 10;

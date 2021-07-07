@@ -10,15 +10,19 @@ p{
 
 .headerFlex{
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     // align-items: center;
     // justify-content: center;
+    // justify-content: flex-end;
     margin: 10vh;
+    margin: 6vh 0;
+    
     position: relative;
     // right: 10%;
     .headerImgFlex{
-        position: relative;
-        right: 8%;
+        // position: relative;
+        // right: 8%;
+        // margin-right: 10%;
         .headerImage{
             background-color: $white;
             height: 525px;
@@ -41,13 +45,15 @@ p{
     }
 
     .harperTitle{
-        display: flex;
+        // display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        position: relative;
-        right: 5%;
-        // margin-left: 75px;
-        position: absolute;
+        // position: relative;
+        // right: 5%;
+        margin-left: 75px;
+        margin-left: 10%;
+        // margin-left: 10%;
+        // position: absolute;
         top: 150px;
         left: 500px;
         // align-self: center;
@@ -59,9 +65,12 @@ p{
             width: calc( 182px * 0.9);
             // width: 182px;
     
-            position: absolute;
+            // position: absolute;
+            position: relative;
             top: -40px;
             right: -10%;
+            top: 115px ;
+            left: 355px;
         }
         // img's & h1 may need to be bigger
     }
@@ -139,7 +148,11 @@ p{
             border-radius: 50%;
             height: 40px;
             width: 125px;
+            width: 130px;
+                // why does border radius become oval with decreased vw? 
             margin-right: 20px;
+            margin-right: 3%;
+                // both margin-rights display the same
             display: flex;
             align-items: center;
             justify-content: center;
@@ -220,7 +233,10 @@ p{
                 width: 48.75%;
                 width: 50vw;
                 width: 650px;
+
                 width: 683px;
+                // width: 50vw;
+                // bottom 2 widths are same 
                 // margin-right: 8%;
                 position: relative;
                 position:absolute;
@@ -312,6 +328,7 @@ p{
                 width: calc(640px * 0.80);
                 width: calc(640px * 0.85);
                 left: 145px;
+                left: 127px;
                 // right: 0;
                 z-index: 20;
             }
@@ -322,13 +339,17 @@ p{
                 height: 53vh;
                 // width: 48.75%;
                 width: 50vw;
-                width: 650px;
+                // width: 650px;
+                width: 668px;
+                    //bottom 2 widths are same 
                 // margin-right: 8%;
                 position: absolute;
                 // bottom: 340px;
                 // bottom: -19.2px;
                 top: 18px;
                 // left: 120px;
+                left: 681px;
+                // left: 50%;
                 right: -150px;
                 right: -149px;
                 z-index: 10;
